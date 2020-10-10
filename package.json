@@ -9,15 +9,14 @@
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "build:rollup": "rm -rf ./dist && NODE_ENV=production BABEL_ENV=production rollup -c",
     "build:in": "rm -rf ./dist && babel src -d dist",
-    "publis:patch":"npm version patch"
+    "publis:patch": "npm version patch && cp ./package.json ./dist"
   },
   "keywords": [
     "tinper-bee"
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
