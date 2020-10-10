@@ -1,0 +1,101 @@
+
+.tag-input-lf-wrap{
+  position: relative;
+}
+.tag-input-lf-wrap div{
+  box-sizing: border-box;
+}
+.tag-input-lf-border{
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.tag-input-lf-input {
+  display: flex;
+  height: 32px;
+  padding: 0 46px 0 6px;
+}
+.tag-input-lf-items {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  margin: 5px 2px 0;
+  padding: 0px 21px 0px 9px;
+  border-radius: 2px;
+  border: 1px solid #dbe0e5;
+  line-height: 20px;
+  font-size: 12px;
+  color: #505766;
+  background: #f7f9fd;
+}
+.tag-input-lf-close{
+  position: absolute;
+  top: 0;
+  right:8px ;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  
+}
+.tag-input-lf-close>span:hover{
+  color: #e23;
+  cursor: pointer;
+}
+.tag-input-lf-icon{
+  position: absolute;
+  right: 12px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  flex-wrap: nowrap;
+}
+.tag-input-lf-more{
+  width: 12px;
+  display: flex;
+  height: 32px;
+  margin-right: 5px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.tag-input-lf-more>i{
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #505766;
+  
+  
+}
+.tag-input-lf-clean{
+  display: flex;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  line-height: 10px;
+  border-radius: 6px;
+  color: #fff;
+  background:#CCCCCC ;
+  cursor: pointer;
+}
+.tag-input-lf-list{
+  position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    display: none;
+}
+.tag-input-lf-all{
+  padding: 0 6px 5px 6px;
+  max-height: 248px;
+  overflow-y: auto;
+}
+.tag-input-lf-wrap:hover .tag-input-lf-list{
+  display: block;
+}
+

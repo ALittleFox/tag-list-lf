@@ -1,6 +1,6 @@
 {
   "name": "tag-list-lf",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "tag list",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,14 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "build:rollup": "rm -rf ./dist && NODE_ENV=production BABEL_ENV=production rollup -c",
-    "build:in": "rm -rf ./dist && babel src -d dist"
+    "build:in": "rm -rf ./dist && babel src -d dist",
+    "publis:patch":"npm version patch"
   },
   "keywords": [
     "tinper-bee"
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
@@ -29,6 +31,8 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-url": "^5.0.1",
     "@svgr/rollup": "^5.4.0",
+    "@types/react": "^16.9.51",
+    "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-react-app": "^9.1.2",
@@ -47,10 +51,14 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-postcss": "^3.1.6",
     "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-typescript2": "^0.27.3",
     "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "types": "./dist/src/"
 }
