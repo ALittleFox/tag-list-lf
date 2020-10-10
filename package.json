@@ -1,6 +1,6 @@
 {
   "name": "tag-list-lf",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "tag list",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
