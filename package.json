@@ -1,6 +1,6 @@
 {
   "name": "tag-list-lf",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "tag list",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -9,12 +9,12 @@
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "build:rollup": "rm -rf ./dist && NODE_ENV=production BABEL_ENV=production rollup -c",
     "build:in": "rm -rf ./dist && babel src -d dist",
-    "publis:patch": "npm version patch && cp ./package.json ./dist"
+    "publis:patch": "npm version patch && cp ./package.json ./dist && cd ./dist && npm publish"
   },
   "keywords": [
-    "tinper-bee"
+    "tag-input"
   ],
-  "author": "",
+  "author": "lf",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
